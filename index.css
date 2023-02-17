@@ -1,0 +1,62 @@
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --White: hsl(0, 0%, 100%);
+    --LightGray: hsl(212, 45%, 89%);
+    --GrayishBlue: hsl(220, 15%, 55%);
+    --DarkBlue: hsl(218, 44%, 22%);
+    --Mobile: 375px;
+    --Desktop: 1440px;
+    --pSize: 15px;
+}
+@font-face {
+    font-family: "Outfit";
+    src: url(https://fonts.google.com/specimen/Outfit);
+}
+
+body {
+    height: 100vh;
+    background-color: var(--LightGray);
+    max-width: var(--Desktop);
+    min-width: var(--Mobile);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 320px;
+    background-color: var(--White);
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px var(--GrayishBlue);
+}
+img {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+article {
+    padding: 1rem 2rem;
+    text-align: center;
+}
+    article > h3 {
+        font-family: "Outfit", sans-serif;
+        font-weight: 700;
+    }
+    article > p {
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        font-size: var(--pSize);
+        color: var(--GrayishBlue);
+        padding-top: 1rem;
+    }
+
+.attribution { font-family: "Outfit", sans-serif; font-size: 11px; text-align: center; padding-top: 1rem; }
+    .attribution a { color: hsl(228, 45%, 44%); }
